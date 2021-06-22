@@ -48,10 +48,23 @@ class StackedRouter extends RouterBase {
       );
     },
     DashboardView: (data) {
+      var args = data.getArgs<DashboardViewArguments>(
+        orElse: () => DashboardViewArguments(),
+      );
       return MaterialPageRoute<dynamic>(
-        builder: (context) => const DashboardView(),
+        builder: (context) => DashboardView(key: args.key),
         settings: data,
       );
     },
   };
+}
+
+/// ************************************************************************
+/// Arguments holder classes
+/// *************************************************************************
+
+/// DashboardView arguments holder class
+class DashboardViewArguments {
+  final Key? key;
+  DashboardViewArguments({this.key});
 }

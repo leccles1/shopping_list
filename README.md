@@ -21,6 +21,10 @@ Serverless! For this project using an entirely serverless backend hosted on AWS 
 
 Flutter the IOS and android versions of the app will be created with Flutter
 
+- AWS API Gateway
+- AWS Amplify
+- AWS Lambda
+
 
 # The plan
 
@@ -28,13 +32,23 @@ Flutter the IOS and android versions of the app will be created with Flutter
 On initial download, users will create accounts. The user account will be used to track basic information about the user.
 
 - Users can create lists
-- users can add items to their list
-- Users can format the text in their list (Headers, bold) - Stretch goal
+- Users can format the text in their list
 - Users can invite others to collaborate on their lists
 - Users are notified to changes in the list (Stretch)
-- Users can view updates live to the lists
+- Users can view updates live (Or close to) in the lists
 
-### Running the code in development
+## List Editing
+ - Editor based on the following [article](https://levelup.gitconnected.com/flutter-medium-like-text-editor-b41157f50f0e)
+ - Group items in the list (categories)
+
+## List management [Based on this UI](https://www.youtube.com/watch?v=DXQPBA0T3Rk&ab_channel=MarcusNg)
+
+ - List collection dashboard.
+ - List type (Shopping / other)
+
+
+
+## Running the code in development
 
 ```
 flutter packages pub run build_runner watch

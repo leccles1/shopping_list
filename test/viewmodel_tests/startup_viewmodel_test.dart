@@ -12,19 +12,24 @@ void main() {
 
     group('Run Startup Logic -', () {
       test('Navigates to login if login flag is NOT set', () async {
-        final service = getAndRegisterNavigationService();
+        final navigationService = getAndRegisterNavigationService();
+        final authService = getAndRegisterAuthenticationService();
         final model = StartUpViewModel();
 
         await model.initialise();
-        verify(service.navigateTo(Routes.loginView));
+        verify(authService.authenticateUser());
+        verify(navigationService.navigateTo(Routes.loginView));
       });
 
       test('Navigates to dashboard if login flag is true', () async {
-        final service = getAndRegisterNavigationService();
-        final model = StartUpViewModel(isLoggedIn: true);
+        final navigationService = getAndRegisterNavigationService();
+        final authService =
+            getAndRegisterAuthenticationService(isLoggedIn: true);
+        final model = StartUpViewModel();
 
         await model.initialise();
-        verify(service.navigateTo(Routes.dashboardView));
+        verify(authService.authenticateUser());
+        verify(navigationService.navigateTo(Routes.dashboardView));
       });
     });
   });

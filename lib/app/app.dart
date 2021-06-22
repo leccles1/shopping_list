@@ -1,3 +1,4 @@
+import 'package:shopping_app/services/authentication_service.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -13,6 +14,7 @@ import '../ui/dashboard/dashboard_view.dart';
   ],
   dependencies: [
     LazySingleton(classType: NavigationService),
+    LazySingleton(classType: AuthenticationService)
   ],
   logger: StackedLogger(),
 )
