@@ -1,5 +1,5 @@
-name: flutter_starter_stacked
-description: A new Flutter project.
+name: shopping_app
+description: A shopping list application for IOS & Android.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1

@@ -1,34 +1,40 @@
-# Flutter Starter Stacked
+# Shopping List
 
-This project is a starting point for a Flutter application that utilises the [Stacked architecture](https://pub.dev/packages/stacked).
+A smart shopping list.
 
-The template is setup with the following features for convenience.
+## Why?
 
-* Automatic code generation for Dependency Injection
-* Automatic code generation for handling the application routes
-* Automatic code generation for mocking services in unit tests
-* Application logging
+Myself and my partner use shared apple notes to keep track of our shopping list. Broken down into a long checklist of categories and products.
+
+As we make decisions on what to buy we untick them on the list. There is no ordering in place and it's lead to some very long lists. All out of order requiring a lot of scrolling to check we've got everything!
 
 
-## Getting Started
+## The idea
 
-Simply clone the repo and follow the steps below to have a great starting point for flutter apps.
+A shopping list/any type of list app that enables simple ordering of items in the list along with some additional features like products shooting to the top of the list to build a shopping list over time.
 
-1. Create your project using this repo by either:
-    * On Github click "Use this template" button which will allow you to create your project using this repo as your baseline, or
-    * Clone this repo to your local machine
+Also shared lists, sharing lists between users, tracking changes made from all over time. 
 
-2. Run flutter pub get to fetch dependencies
+# The stack
 
-3. Now to change your app's package name / bundle identifier in both Android and iOS manifests, run ```flutter pub run change_app_package_name:main <com.new.package.name>```.
+Serverless! For this project using an entirely serverless backend hosted on AWS is the aim. Over the course of the project it will expose me to serverless architecture and also opens the possibility of releasing the app to the public without much required on my side in terms of hosting, server management.
 
-4. Next you'll need to change your app's user-readable label - the CFBundleName and/or CFBundleDisplayName within Info.plist (for iOS) and android:label field in your application node in AndroidManifest.xml (for Android).
+Flutter the IOS and android versions of the app will be created with Flutter
 
-NOTE: You'll also need to change your package name and description within pubspec.yaml
 
-### Running your project
+# The plan
 
-Once the above steps are complete, you should be in a good position to start developing your application. When developing your application, the following commands will run the code generation that automatically enables dependency injection, route management (and route parameters) as well as mocks for unit testing.
+## User Accounts
+On initial download, users will create accounts. The user account will be used to track basic information about the user.
+
+- Users can create lists
+- users can add items to their list
+- Users can format the text in their list (Headers, bold) - Stretch goal
+- Users can invite others to collaborate on their lists
+- Users are notified to changes in the list (Stretch)
+- Users can view updates live to the lists
+
+### Running the code in development
 
 ```
 flutter packages pub run build_runner watch

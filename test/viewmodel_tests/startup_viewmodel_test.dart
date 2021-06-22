@@ -1,5 +1,5 @@
-import 'package:flutter_starter_stacked/app/app.router.dart';
-import 'package:flutter_starter_stacked/ui/startup/startup_viewmodel.dart';
+import 'package:shopping_app/app/app.router.dart';
+import 'package:shopping_app/ui/startup/startup_viewmodel.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 

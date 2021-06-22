@@ -1,9 +1,9 @@
-import 'package:flutter_starter_stacked/app/app.locator.dart';
-import 'package:flutter_starter_stacked/app/app.logger.dart';
+import 'package:shopping_app/app/app.locator.dart';
+import 'package:shopping_app/app/app.logger.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
-import '../../app/app.router.dart';
+import 'package:shopping_app/app/app.router.dart';
 
 class StartUpViewModel extends BaseViewModel {
   final log = getLogger('StartupViewModel');

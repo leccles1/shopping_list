@@ -1,4 +1,4 @@
-import 'package:flutter_starter_stacked/app/app.locator.dart';
+import 'package:shopping_app/app/app.locator.dart';
 import 'package:mockito/annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 

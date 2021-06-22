@@ -1,4 +1,4 @@
-package com.example.flutter_starter_stacked
+package com.fullystacked_development.shopping_app
 
 import io.flutter.embedding.android.FlutterActivity
 
